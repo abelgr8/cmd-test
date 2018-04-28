@@ -22,6 +22,7 @@ router.post('/login', function (req, res) {
 //Creates User
 router.put('/user', function (req, res) {
 	//Checks if any JSON was sent at all
+	console.log(req.body);
 	if (!req.body) return res.sendStatus(400);
 	//console.log('Incoming:');
 	//console.log(req.body);

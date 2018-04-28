@@ -12,7 +12,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 //Load body-parser
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json());
+app.use(bodyParser.json());  
 
 //Routing
 var htmlRouter = require('./controllers/html-routes.js');
